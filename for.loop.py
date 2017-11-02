@@ -2,7 +2,7 @@
 for number in range(1,11):
     print(number)
 
-# calculating the number of vowels and consonants in a given word
+# calculate the number of vowels and consonants in a given word
 
 vowels = 0
 consonants = 0
@@ -26,4 +26,12 @@ students = {
     }
 
 for key in students.keys():
-    print(students[key])
+    print(key) # prints "male" and "female"
+
+for key in students.keys():
+    for name in students[key]:
+        if "a" in name:
+            print(name)
+   
+
+    
